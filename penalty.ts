@@ -13,8 +13,8 @@ export const tirerPenalty = (tauxReussite: number, randomValue: number): TirResu
     }
     // 2. Sinon, on répartit les autres issues de façon simple et claire :
     // Ici, on choisit :
-    // - 10% pour "ARRET" (tauxReussite à tauxReussite+10)
-    // - 10% pour "POTEAU" (tauxReussite+10 à tauxReussite+20)
+    // - 10% pour "ARRET"
+    // - 10% pour "POTEAU"
     // - le reste pour "HORS_CADRE"
     if (randomValue < tauxReussite + 10) {
         return "ARRET";
