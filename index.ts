@@ -1,7 +1,12 @@
-export type TirResultat = "BUT" | "ARRET" | "POTEAU" | "HORS_CADRE";
+export const simulerSeance = (configEquipeA, configEquipeB) => {
 
-export type Historique = {
-  tour: number;
-  equipe: string;
-  resultat: TirResultat;
-}[];
+    for(let compteur = 0; compteur < 5; compteur++) {
+        tirerPenalty(configEquipeA.tauxReussite, Math.random() * 100);
+        tirerPenalty(configEquipeB.tauxReussite, Math.random() * 100);
+
+        // Stocker dans l'historique 
+        // Vérifier si victoire mathématique 
+        // Retourner le résultat final
+    }
+
+}
