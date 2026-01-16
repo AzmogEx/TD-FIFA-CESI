@@ -1,6 +1,6 @@
 {
   "name": "td-fifa-cesi",
-    "main": "index.ts",
+  "main": "index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
@@ -8,9 +8,9 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "bun run index.ts"
   }
-    "scripts": {
-      "build": "tsc",
-      "start": "bun run index.ts"
-    },
 }
